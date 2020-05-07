@@ -1,8 +1,10 @@
-/* Ceci est la feuille de style de la page index_v1_1.html */
+/* Ceci est la feuille de style de la page index.html */
 
 
 
 body {
+	margin: 0px;
+
 	font-family: 'Segoe UI light', Helvetica, Arial;
 	color: #4a4a4a;
 }
@@ -12,23 +14,26 @@ body {
 	display: flex;
 	flex-direction: row-reverse;
 }
-
-#main-block {
+	ul
+	{
+		padding-inline-start: 17px;
+	}
+main {
 	width: 66%;
 	margin: 0px;
-	padding: 50px;
+	padding: 50px 50px 0px 50px;
 }
 	header
 	{
 		margin: 0px;
-		padding: 0px 0px 120px 0px;
+		padding: 50px 0px 60px 0px;
 	}
 		header h1
 		{
 			margin: 0px;
 			padding: 0px;
 
-			font-size: 5em;
+			font-size: 4em;
 			text-transform: uppercase;
 			color: #feca07;
 		}
@@ -42,30 +47,171 @@ body {
 			margin: 0px;
 			padding: 0px;
 
-			font-size: 2em;
+			font-size: 1.7em;
+			font-weight: bold;
+			color: #000;
 		}
 		header p span
 		{
 			border-bottom: 2px solid #feca07;
 		}
-	#main-block h2
+	main h2
 	{
-		margin: 0px;
+		margin: 40px 0px 50px 0px;
 		padding: 0px 0px 5px 0px;
 		border-bottom: 2px solid #feca07;
 
 		font-size: 2em;
+		font-weight: bold;
 		text-transform: uppercase;
 		color: #000;
 	}
-	#main-block .paragraph
+		.img-float
+		{
+			margin-right: 50px;
+		}
+	main .paragraph
+	{
+		margin-bottom: 15px;
+		display: flex;
+	}
+	main h3
+	{
+		margin: 5px;
+
+		font-size: 23px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #000;
+	}
+	main h4, main p
+	{
+		margin: 7px 0px 7px 0px;
+
+		font-weight: normal;
+	}
+		.right-section
+		{
+			width: 66%;
+		}
+			.right-section ul
+			{
+				margin: 0px;
+
+				list-style-type: circle;
+			}
+		.left-section
+		{
+			width: 33%;
+
+			font-weight: bold;
+			color: #000;
+		}
+			.left-section ul
+			{
+				margin: 5px;
+				list-style-image: url(img/puce.png);
+			}
+			.left-section li
+			{
+				padding: 5px;
+			}
+	.competences
 	{
 		display: flex;
 	}
+	.competences ul
+	{
+		list-style-type: none;
+		padding-inline-start: 0px;
+	}
+		.professionnelles
+		{
+			width: 45%;
+		}
+		.specifiques
+		{
+			width: 55%;
+		}
+			.specifiquesContent
+			{
+				display: flex;
+			}
+			.specifiquesContent h4
+			{
+				margin: 0px 0px 5px 0px;
+			}
+			.specifiquesContent section
+			{
+				width: 50%;
+			}
+
 
 aside {
+	position: relative;
+
 	width: 33%;
 	margin: 0px;
 	padding: 0px;
 	background-color: #feca07;
+}
+	aside .picture
+	{
+		display: flex;
+		justify-content: center;
+	}
+		.picture img
+		{
+			margin: 60px 0px 50px 0px;
+		}
+	aside h2
+	{
+		margin: 0px;
+		padding: 5px;
+		background-color: #4a4a4a;
+
+		font-size: 2em;
+		text-transform: uppercase;
+		text-align: center;
+		color: #feca07;
+	}
+	aside .paragraph
+	{
+		margin: 50px;
+
+		font-size: 1.2em;
+		text-align: justify;
+	}
+	.loisirs
+	{
+		position: absolute;
+		bottom: 0px;
+		
+		width: 100%;
+	}
+	.loisirs ul
+	{
+		margin: 25px 40px 25px 40px;
+		padding: 0px;
+		display: flex;
+		justify-content: center;
+		list-style-type: none;
+	}
+	.loisirs li
+	{
+		margin: auto;
+	}
+
+
+@media screen and (max-width: 1100px)
+{
+	.competences
+	{
+		display: flex;
+		flex-direction: column;
+	}
+		.specifiques
+		{
+			width: 100%;
+		}
 }
