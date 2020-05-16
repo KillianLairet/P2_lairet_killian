@@ -213,7 +213,7 @@ aside {
 	}
 	main
 	{
-		width: 100vh;
+		width: calc(100% - 50px);
 		margin: 0px;
 		padding: 25px;
 	}
