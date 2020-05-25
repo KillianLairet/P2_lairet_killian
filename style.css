@@ -14,10 +14,7 @@ body {
 	display: flex;
 	flex-direction: row-reverse;
 }
-	ul
-	{
-		padding-inline-start: 17px;
-	}
+
 main {
 	width: 66%;
 	margin: 0px;
@@ -123,7 +120,6 @@ main {
 	.competences ul
 	{
 		list-style-type: none;
-		padding-inline-start: 0px;
 	}
 		.professionnelles
 		{
